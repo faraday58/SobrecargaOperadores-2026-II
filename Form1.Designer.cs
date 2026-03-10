@@ -86,6 +86,7 @@
             btnSumar.TabIndex = 2;
             btnSumar.Text = "Sumar";
             btnSumar.UseVisualStyleBackColor = true;
+            btnSumar.Click += btnSumar_Click;
             // 
             // Form1
             // 
@@ -106,11 +107,11 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtbOperando1;
         private Label label1;
-        private TextBox textBox2;
+        private TextBox txtbOperando2;
         private Label label2;
-        private Label label3;
+        private Label lbResultado;
         private Button btnSumar;
     }
 }

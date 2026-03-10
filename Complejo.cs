@@ -25,7 +25,7 @@ namespace SobrecargaOperadores_2026_II
             partes[1].Trim('j'); // Eliminar la 'j' al final
 
             float real = float.Parse(partes[0].Trim());
-            float imaginaria = float.Parse(partes[1].Trim());
+            float imaginaria = float.Parse(partes[1].Trim('j'));
             return new Complejo(real, imaginaria);
         }
 
@@ -37,7 +37,7 @@ namespace SobrecargaOperadores_2026_II
 
         public override string ToString()
         {
-            return $" {real} + {imaginaria} ";
+            return $" {real} + {imaginaria}j";
         }
 
     }
